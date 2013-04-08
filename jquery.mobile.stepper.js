@@ -28,6 +28,8 @@
 			// Insert button markup
 			if(o.direction == "horizontal"){
 				$input.before($decBtn).after($incBtn);
+				$incBtn.addClass('inc-horizontal');
+				$decBtn.addClass('dec-horizontal');
 			}else{
 				$input.before($incBtn).after($decBtn).wrap('<div class="step-input-wrap" />');
 			}
